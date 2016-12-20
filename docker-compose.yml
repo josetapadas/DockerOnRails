@@ -14,6 +14,7 @@ services:
     volumes:
       - ./keys:/root/.ssh/
     command: [bundle, exec, rails, server, --port, '3000', --binding, 0.0.0.0]
+    entrypoint: ['entrypoint-script.sh']
   database:
     image: postgres
     volumes:
