@@ -2,6 +2,7 @@ syncs:
   chato-web-sync:
     src: './chato'
     dest: '/opt/chato'
-    sync_host_ip: 'localhost'
+    sync_host_ip: '127.0.0.1'
     sync_host_port: 10872
+    sync_strategy: unison
 
