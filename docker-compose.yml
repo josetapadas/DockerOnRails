@@ -13,8 +13,8 @@ services:
       - container:chato-web-sync:rw
     volumes:
       - ./keys:/root/.ssh/
-    command: [bundle, exec, rails, server, --port, '3000', --binding, 0.0.0.0]
-    entrypoint: ['entrypoint-script.sh']
+    command: [bundle, exec, puma]
+    stop_signal: SIGINT
   database:
     image: postgres
     volumes:

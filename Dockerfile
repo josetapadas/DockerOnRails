@@ -24,7 +24,4 @@ ENV PATH $GEM_HOME/bin:$PATH
 ENV BUNDLE_PATH $GEM_HOME
 ENV BUNDLE_BIN $BUNDLE_PATH/bin
 
-COPY entrypoint-script.sh /usr/bin
-RUN chmod +x /usr/bin/entrypoint-script.sh
-
 WORKDIR $APP_HOME
